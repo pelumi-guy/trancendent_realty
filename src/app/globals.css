@@ -1,42 +1,89 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* @media (prefers-color-scheme: dark) {
+     :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+} */
+
+
+/* @media (prefers-color-scheme: dark) {
+     :root {
+        --background: #1e1e1e;
+        --foreground: #ededed;
+    }
+} */
+
+@media (prefers-color-scheme: light) {
+     :root {
+        --background: #ffffff;
+        --foreground: #171717;
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@media (prefers-color-scheme: light) {
+    html {
+        color-scheme: light;
+    }
 }
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+    max-width: 100vw;
+    overflow-x: hidden;
+    color-scheme: light;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    color: var(--foreground);
+    background: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.show-border {
+    border: 1px solid red;
+}
+
+.header-search {
+    border-radius: 8px;
+}
+
+.search-btn {
+    border: none !important;
+    /* Remove border */
+    /* padding: 0 !important;
+    box-shadow: none !important; */
+}
+
+.search-field {
+    border: none !important;
+    align-self: center;
+    background-color: transparent;
+}
+
+.input-group-append {
+    background-color: transparent !important;
+}
+
+.landing-search-filter {
+    width: 50%;
+    max-width: 240px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.landing-main-search {
+    border: 1px solid black;
 }
